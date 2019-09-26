@@ -1,20 +1,15 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Aug 30 16:17:05 2019
+'''
+Escribir un programa que pida un numero entero y muestre por pantalla la cantidad de
+cifras de dicho numero.
+'''
+def pedirNumero() -> str:
+    return input("numero: ")
 
-@author: fernandopuricelli
-"""
+def contarCifras(numero: str) -> int:
+    return len(numero)
 
-""" Ej. 16: Escribir un programa que pida un numero entero 
-y muestre por pantalla la cantidad de cifras de dicho numero."""
+def main():
+    a = pedirNumero()
+    print("Cantidad de cifras de %s:  %d" %(a,contarCifras(a)))
 
-def cifras(num):
-    cifras=1
-    while(num//10>0):
-        num=num/10
-        cifras+=1
-    return(cifras)
-
-numero=int(input('número: '))
-print('el número: ',numero,' tiene ',cifras(numero),' cifras')
+main()

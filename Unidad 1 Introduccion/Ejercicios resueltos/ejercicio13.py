@@ -1,32 +1,20 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Aug 23 14:26:14 2019
+'''
+Construir un programa que lea un número natural N y calcule la suma de los primeros
+N números pares.
+'''
 
-@author: fernandopuricelli
-"""
+def calculo(N):
+    r = 0
+    for i in range(N+1):
+        if(i%2==0):
+            r+=i
+    return r
 
-def esPar(numero):
-    return(numero%2==0)
+def calculo2(N):
+       r=0
+       for i in range(N+1):
+           r+= i if i%2==0 else 0
+       return r
 
-def sumarParesHastaN(n):
-    suma=0
-    for i in range(n):
-        if esPar(i):
-            suma=suma+i
-    return(suma)
-
-""" Otra forma de definir la función , por eso en el nombre tiene un 2 al final """
-
-def sumarParesHastaN2(n):
-    suma=0
-    for i in range(n):
-        suma=suma+(i if esPar(i) else 0)
-    return(suma)
-
-
-
-numeroHasta=int(input('número natural:'))
-print('Suma:','\t',sumarParesHastaN(numeroHasta))
-print('Suma (otra forma):','\t',sumarParesHastaN2(numeroHasta))
-
+print(calculo(7))
+print(calculo2(5))
