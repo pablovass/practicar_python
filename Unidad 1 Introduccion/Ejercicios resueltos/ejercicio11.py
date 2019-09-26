@@ -1,38 +1,23 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Aug 30 14:18:34 2019
+'''
+Escribir un programa que imprima por pantalla todas las fichas del domino, una por
+linea, sin repetir.
+'''
 
-@author: fernandopuricelli
-"""
+def bordeFicha():
+    return'||'
 
-""" Ej 11: Escribir un programa que imprima por pantalla todas las fichas
- del domino, una por linea, sin repetir."""
- 
- 
-def muestraBordeFicha():
-     print('||',end='')
- 
-def muestraNumeros(num1,num2):
-    print(num1,'|',num2,end='')
+def separadorFicha():
+    return '|'
 
-def separaFicha():
-    print(end=' ')
-    
-def armaFichasCon(numero):
-    for num2 in range(numero,7):
-        muestraBordeFicha()
-        muestraNumeros(numero,num2)
-        muestraBordeFicha()
-        separaFicha()
-
-def separaSiguienteSerieDeFichas():
-    print('\n')
-
-def fichasDomino():
-    for num in range(1,7):
-        armaFichasCon(num)
-        separaSiguienteSerieDeFichas()
+def ficha(n): 
+    for i in range (n,7):
+        print('%s%d%s%d%s ' %(bordeFicha(),n,separadorFicha(),i,bordeFicha()), end='')
+    return n+1
         
+def fichasDomino():
+    n=1
+    while n<7:
+        n=ficha(n)
+        print()
 
 fichasDomino()
