@@ -2,7 +2,7 @@
 Implementar una funcion que calcule el factorial de un numero de forma recursiva
 '''
 
-def factorial(numero):
+def factorial(numero:int)->int:
     return 1 if numero == 1 else factorial(numero-1) * numero
 
 

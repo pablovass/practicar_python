@@ -9,10 +9,10 @@ Resolver el problema con una función recursiva.
 Nota: Pueden pensar la solucion en dos funciones, primero una que calcule la cantidad de granos de trigo en un casillero determinado y luego otra con el total.
 '''
 
-def doble(numero):
+def doble(numero:int )->int:
     return numero *2
 
-def tablero(posicion):
+def tablero(posicion:int)->int:
     return 1 if posicion == 1 else doble(tablero(posicion-1))
 
 if __name__ == '__main__':
