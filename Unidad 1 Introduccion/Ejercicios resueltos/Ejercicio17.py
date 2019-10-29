@@ -17,8 +17,8 @@ def numeroPrimo(numero:int)->bool:
         i+=1
     return True
 
-def main():
+if __name__ == '__main__':
     a = pedirNumero()
     print(("%d es numero primo -> %s") %(a,numeroPrimo(a)))
 
-main()
+
