@@ -2,7 +2,9 @@
 
 ## RECURSOS PYTHON
 Python Argentina: https://www.python.org.ar/
+
 Tutorial: https://www.python.org.ar/aprendiendo-python/
+
 IDE - Spyder: descarga el paquete Anaconda con Python 3  https://www.anaconda.com/distribution/
 
 
