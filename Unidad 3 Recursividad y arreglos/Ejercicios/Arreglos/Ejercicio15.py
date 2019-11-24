@@ -17,6 +17,7 @@ def cadaDosCaracteres(cadena):
         aux.append(cadena[i])
     return ''.join(aux)
 
+
 if __name__ == "__main__":
     print(primeroDosCaracteres('Sebastian'))
     print(ultimosTresCaracteres('Sebastian'))
