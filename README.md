@@ -1,4 +1,5 @@
 # Estructuras de datos en Python
+Esto es de un cursito que hice en la UNAHUR o algo asi, si fuese menos vago ya lo hubiese terminado
 
 ## RECURSOS PYTHON
 Python Argentina: https://www.python.org.ar/
